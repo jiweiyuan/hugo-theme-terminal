@@ -20,3 +20,4 @@ The theme includes:
 - mobile friendly layout
 
 So, there you have it... enjoy!
+

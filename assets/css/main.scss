@@ -11,10 +11,10 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Fira Code', Monaco, Consolas, Ubuntu Mono, monospace;
-  font-size: 1rem;
-  line-height: 1.54;
-  letter-spacing: -0.02em;
+  font-family: Georgia, 'Fira Code', Monaco, Consolas, Ubuntu Mono, monospace;
+  font-size: 1.1rem;
+  line-height: 1.36;
+  letter-spacing: 0.01em;
   background-color: $background;
   color: $color;
   text-rendering: optimizeLegibility;
@@ -149,8 +149,8 @@ pre {
   margin: 40px 0;
   font-size: .95rem !important;
   overflow: auto;
-  border-top: 1px solid rgba(255, 255, 255, .1);
-  border-bottom: 1px solid rgba(255, 255, 255, .1);
+  border-top: 1px solid $accent;
+  border-bottom: 1px solid $accent;
 
   + pre {
     border-top: 0;
@@ -300,7 +300,7 @@ mark {
   padding: 40px;
   max-width: 864px;
   min-height: 100vh;
-  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  border-right: 1px solid $accent;
 
   &.full,
   &.center {

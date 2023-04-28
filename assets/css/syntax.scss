@@ -34,7 +34,7 @@ code.language-scss,
 .token.class-name,
 .token.constant,
 .token.symbol {
-  color: transparentize($accent, .3) !important;
+  color: transparentize($accent, .1) !important;
 }
 
 .token.property,
@@ -44,7 +44,7 @@ code.language-scss,
 code.language-javascript,
 code.language-html,
 .command-line-prompt > span:before {
-  color: mix($accent, #999, .9) !important;
+  color: mix($accent, #000000, .9) !important;
 }
 
 .token.selector,
@@ -57,7 +57,7 @@ code.language-html,
 .token.prolog,
 .token.doctype,
 .token.cdata {
-  color: rgba(255, 255, 255, .3) !important;
+  color: $accent !important;
 }
 
 .token.namespace {
@@ -120,7 +120,8 @@ pre[class*="language-"] {
 	position: relative;
 	margin: $code-margin 0;
 	padding: 20px;
-	border: 1px solid rgba(255, 255, 255, .1);
+	border: 2px solid $accent !important;
+  border-radius: 8px !important;
 
 	+ .code-toolbar,
 	+ .highlight,
@@ -135,16 +136,17 @@ pre[class*="language-"] {
 
 	code {
 		display: block;
-		color: inherit;
+		color: #000000;
 	}
 
   > .toolbar {
     button {
       font-size: .8em !important;
       background: hsla(0,0%,87.8%,.2) !important;
-      color: #bbb !important;
+      color: $accent !important;
+      border: 2px solid $accent !important;
       box-shadow: 0 2px 0 0 rgba(0,0,0,.2) !important;
-      border-radius: 0 !important;
+      border-radius: 4px !important;
       margin: 6px !important;
       padding: 10px !important;
       user-select:none
