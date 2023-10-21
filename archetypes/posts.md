@@ -1,8 +1,8 @@
 +++
 title = "{{ replace .TranslationBaseName "-" " " | title }}"
 date = "{{ .Date }}"
-author = ""
-authorTwitter = "" #do not include @
+author = "Jiwei, Yuan"
+authorTwitter = "JiweiYuan" #do not include @
 cover = ""
 tags = ["", ""]
 keywords = ["", ""]
