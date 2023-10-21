@@ -49,9 +49,17 @@
       flex: 0 0 auto;
       margin-bottom: 10px;
       white-space: nowrap;
+      
 
       &:not(:last-of-type) {
         margin-right: 20px;
+      }
+
+      a:hover {
+        text-decoration: none;
+        background-color: $accent;
+        color: #ffffff;
+        transform: scale(1.1);
       }
     }
 

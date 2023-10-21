@@ -2,22 +2,22 @@
   
 <div>
   <div class="link-container" style="text-align: left;">
-      <a href="https://github.com/jiweiyuan" style="text-decoration: none; color: #333;">
+      <a href="https://github.com/jiweiyuan" style="text-decoration: none;">
           <i class="fab fa-github" style="font-size: 1rem; margin-right: 5px;"></i> GitHub
       </a>
   </div>
   <div class="link-container" style="text-align: left;">
-      <a href="https://twitter.com/JiweiYuan" style="text-decoration: none; color: #333;">
+      <a href="https://twitter.com/JiweiYuan" style="text-decoration: none;">
           <i class="fab fa-twitter" style="font-size: 1rem; margin-right: 5px;"></i> Twitter
       </a>
   </div>
   <div class="link-container" style="text-align: left;">
-      <a href="https://linkedin.com/in/jiweiyuan" style="text-decoration: none; color: #333;">
+      <a href="https://linkedin.com/in/jiweiyuan" style="text-decoration: none;">
           <i class="fab fa-linkedin" style="font-size: 1rem; margin-right: 5px;"></i> LinkedIn
       </a>
   </div>
   <div class="link-container" style="text-align: left;">
-      <a href="mailto:ji-weiyuan@outlook.com" style="text-decoration: none; color: #333;">
+      <a href="mailto:ji-weiyuan@outlook.com" style="text-decoration: none;">
           <i class="fas fa-envelope" style="font-size: 1rem; margin-right: 5px;"></i> Email
       </a>
   </div>
@@ -28,6 +28,17 @@
   </div> -->
 </div>
 
+<hr style="border: 2px transparent solid !important; margin-top: 30px; margin-bottom: 4px;" />
+<div>
+  <div class="link-container" style="text-align: left;">
+      List of Posts: &nbsp;
+      <a href="/tags/programming/">Programming</a> &nbsp;
+      <a href="/tags/software/">Software</a> &nbsp;
+      <a href="/tags/productivity/">Productivity</a>
+      <!-- <a href="/tags/product/">Product</a> -->
+</div>
+
+<hr style="border: 2px transparent solid !important; margin-top: 4px;"/>
   {{ if .Content }}
     <div class="index-content {{ if .Params.framed -}}framed{{- end -}}">
       {{ .Content }}
@@ -44,7 +55,7 @@
     {{ $paginator := .Paginate (where $PageContext.RegularPages "Type" $contentTypeName) }}
 
     {{ range $paginator.Pages }}
-      <article class="post on-list">
+      <!-- <article class="post on-list">
         <h1 class="post-title">
           <a href="{{ .Permalink }}">{{ .Title | markdownify }}</a>
         </h1>
@@ -87,7 +98,7 @@
             <a class="read-more button" href="{{.RelPermalink}}">{{ $.Site.Params.ReadMore }} →</a>
           </div>
         {{ end }}
-      </article>
+      </article> -->
     {{ end }}
 
     {{ partial "pagination.html" . }}
