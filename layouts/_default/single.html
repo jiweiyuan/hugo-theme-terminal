@@ -45,6 +45,8 @@
       </div>
     {{- end -}}
   </div>
+
+  {{ partial "posts_list.html" . }}
 <!-- 
   {{ if eq .Type $.Site.Params.contentTypeName }}
     {{ partial "posts_pagination.html" . }}

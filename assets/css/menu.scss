@@ -34,7 +34,7 @@
   margin: 20px 1px;
 
   @media ($phone) {
-    margin: 0;
+    margin: 10;
   }
 
   &__inner {
@@ -53,6 +53,10 @@
 
       &:not(:last-of-type) {
         margin-right: 20px;
+
+        @media ($phone) {
+          margin-right: 0px;
+        }
       }
 
       a:hover {
@@ -118,7 +122,9 @@
 
   &--desktop {
     @media ($phone) {
-      display: none
+      // display: none
+      display: flex;
+      flex-direction: row;
     }
   }
 
