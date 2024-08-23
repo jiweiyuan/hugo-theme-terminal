@@ -48,6 +48,12 @@
     font-size: 1.1rem;
     margin-bottom: 0px;
     color: $accent;
+    display: flex;
+    time {
+      display: block;
+      min-width: 7rem;
+      font-size: 1.2rem;
+    }
   }
 
   &-title {
